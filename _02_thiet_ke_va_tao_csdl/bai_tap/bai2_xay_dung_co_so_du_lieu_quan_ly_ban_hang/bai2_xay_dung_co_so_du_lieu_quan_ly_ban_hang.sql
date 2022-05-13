@@ -1,3 +1,5 @@
+DROP DATABASE quan_ly_ban_hang;
+
 CREATE DATABASE quan_ly_ban_hang;
 USE quan_ly_ban_hang;
 
@@ -39,4 +41,4 @@ PRIMARY KEY (o_id, p_id),
 FOREIGN KEY (o_id) REFERENCES `order` (o_id),
 FOREIGN KEY (p_id) REFERENCES product(p_id)
 );
--- DROP DATABASE quan_ly_ban_hang;
+

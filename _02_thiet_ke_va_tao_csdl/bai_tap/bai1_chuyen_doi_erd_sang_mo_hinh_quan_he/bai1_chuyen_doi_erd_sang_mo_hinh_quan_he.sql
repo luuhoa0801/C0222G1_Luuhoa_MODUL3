@@ -16,27 +16,25 @@ so_pn    INT        PRIMARY KEY,
 ngay_nhap DATE
 );
 
-
 CREATE TABLE nhacc(
 ma_ncc   INT         PRIMARY KEY,
 ten_ncc  VARCHAR (50),
 dia_chi  VARCHAR (50)
-
 );
 
 CREATE TABLE sdt_nhacc(
-ma_ncc INT,
-sdt    INT,
-FOREIGN KEY (ma_ncc) REFERENCES nhacc (ma_ncc) 
+ma_ncc   INT,
+sdt      INT PRIMARY KEY,
+FOREIGN KEY (ma_ncc) REFERENCES nhacc ( ma_ncc)
 );
-
 
 CREATE TABLE don_dh(
 so_dh    INT      PRIMARY KEY,
 ngay_dh  DATE,
-ma_ncc   INT ,
+ma_ncc INT,
 FOREIGN KEY (ma_ncc) REFERENCES nhacc (ma_ncc)
 );
+
 
 CREATE TABLE chi_tiet_phieu_xuat(
 so_px     INT ,
