@@ -117,7 +117,7 @@ GROUP BY hdct.ma_hop_dong
 HAVING so_lan_su_dung = (SELECT count(hdct.ma_dich_vu_di_kem) AS so_lan_thue
  FROM hop_dong_chi_tiet  hdct GROUP BY hdct.ma_hop_dong ORDER BY so_lan_thue ASC LIMIT 1);
 
--- 14a.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien, ho_ten, ten_trinh_do, ten_bo_phan, so_dien_thoai,
+-- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien, ho_ten, ten_trinh_do, ten_bo_phan, so_dien_thoai,
 --  dia_chi mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021.
 
 SELECT nv.ma_nhan_vien, nv.ho_ten,td.ten_trinh_do,bp.ten_bo_phan,nv.so_dien_thoai, nv.dia_chi,count(nv.ma_nhan_vien) AS so_lan_lap 
@@ -129,4 +129,10 @@ GROUP BY nv.ma_nhan_vien
 HAVING so_lan_lap <= 3 AND nv.ma_nhan_vien IN 
 (SELECT hd.ma_nhan_vien FROM hop_dong hd WHERE year(hd.ngay_lam_hop_dong) in (2020,2021)); 
 
--- 15.	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021.
+-- 16.	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019 đến năm 2021.
+
+SELECT nv.ma_nhan_vien,count(nv.ma_nhan_vien) AS so_lan_lap
+FROM hop_dong  hd
+JOIN nhan_vien  nv ON nv.ma_nhan_vien = hd.ma_nhan_vien
+GROUP BY nv.ma_nhan_vien
+HAVING so_lan_lap = 0 and nv.ma_nhan_vien IN (SELECT hd.ma_nhan_vien  FROM hop_dong  hd WHERE year(hd.ngay_lam_hop_dong) IN (2019,2020,2021) )

@@ -1,5 +1,3 @@
--- DROP DATABASE furama;
-
 CREATE DATABASE IF NOT EXISTS  furama ;
 USE furama;
 CREATE TABLE vi_tri(
