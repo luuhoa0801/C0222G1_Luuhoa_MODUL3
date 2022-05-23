@@ -19,16 +19,20 @@ INSERT INTO nhan_vien (ho_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_ch
 ("Nguyễn Trung Kiên","1999-11-08",1234567999,100.0,"0789280333","trungkien@gmail.com","Đà Nẵng",2,2,1);
 
 INSERT INTO loai_khach( ten_loai_khach) VALUE
- ("Member"),
+ 
  ("Diamond"),
+ ("Platinium"),
  ("Gold"),
- ("Diamond");
+ ("Silver"),
+ ("Member");
  
 INSERT INTO khach_hang (ma_loai_khach, ho_ten, ngay_sinh, gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi) VALUE 
 (2,"Nguyễn Hoàng Hảo","1999-05-05",0,111111,07891111, "hao@email.com" , "Đà Nẵng"),
 (3,"Nguyễn Long","2000-01-01",1,11111,0789222222,"long@gmail.com","Quảng Trị"),
 (1,"Trần Mạnh Cường","1996-03-03",0,2222,078913333, "cuong@email.com" , "Quảng Bình"),
-(2,"Huỳnh Nhật Hoàng","1996-04-04",0,4444,0789444444, "hoang@email.com" , "Vinh");
+(2,"Huỳnh Nhật Hoàng","1996-04-04",0,4444,0789444444, "hoang@email.com" , "Vinh"),
+(2,"Huỳnh Nhật Hoàng","1996-04-04",0,4444,0789444444, "hoang@email.com" , "Vinh"),
+(2,"Nguyễn Văn Vinh","1997-04-04",0,4444,07895555, "vinh@email.com" , "Quảng trị");
 
 
 INSERT INTO dich_vu_di_kem ( ten_dich_vu_di_kem, gia, don_vi, trang_thai) VALUES
@@ -44,7 +48,6 @@ INSERT INTO kieu_thue ( ten_kieu_thue) VALUE
  
 INSERT INTO loai_dich_vu(ten_loai_dich_vu) VALUE
  ("Loại thường"),
- ("Loại thường"),
  ("Loại vip");
 
 INSERT INTO dich_vu( ten_dich_vu, dien_tich, chi_phi_thue, so_nguoi_toi_da,
@@ -59,7 +62,10 @@ INSERT INTO hop_dong (ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,
  ("2020-03-02","2020-03-05",1000.0,1,2,3),
  ("2021-03-02","2021-03-05",1000.0,1,4,1),
  ("2020-11-02","2020-12-03",1000.0,2,1,2),
- ("2021-03-02","2020-02-03",1000.0,2,1,3),
+ ("2021-03-02","2020-02-03",1000.0,2,1,1),
+ ("2021-01-02","2020-02-03",1000.0,2,2,2),
+ ("2021-02-12","2020-03-10",1000.0,2,3,3),
+ ("2021-09-01","2020-10-10",1000.0,2,4,1),
  ("2020-10-02","2020-12-03",1000.0,2,1,1);
  
  
@@ -67,7 +73,11 @@ INSERT INTO hop_dong_chi_tiet(ma_hop_dong, ma_dich_vu_di_kem, so_luong) VALUE
 (1,1,3),
 (1,2,3),
 (2,2,3),
-(1,1,3),
+(5,1,3),
+(6,1,3),
+(7,1,3),
+(8,1,3),
+(9,1,3),
 (4,1,3);
 
 
