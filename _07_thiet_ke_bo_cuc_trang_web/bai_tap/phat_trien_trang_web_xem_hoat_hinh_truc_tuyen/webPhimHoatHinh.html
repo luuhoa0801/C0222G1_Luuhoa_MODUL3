@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media only screen and (max-width:376px ){
+            .col-xs-1 {width: 8.33333%;}
+            .col-xs-2 {width: 16.66667%;}
+            .col-xs-3 {width: 25%;}
+            .col-xs-4 {width: 33.33333%;}
+            .col-xs-5 {width: 41.66667%;}
+            .col-xs-6 {width: 50%;}
+            .col-xs-7 {width: 58.33333%;}
+            .col-xs-8 {width: 66.66667%;}
+            .col-xs-9 {width: 75%;}
+            .col-xs-10 {width: 83.33333%;}
+            .col-xs-11 {width: 91.66667%;}
+            .col-xs-12 {width: 100%;}
+
+        }
+        @media only screen and (min-width:377px )and (max-width:740px ){
+            .col-s-1 {width: 8.33333%;}
+            .col-s-2 {width: 16.66667%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33333%;}
+            .col-s-5 {width: 41.66667%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33333%;}
+            .col-s-8 {width: 66.66667%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33333%;}
+            .col-s-11 {width: 91.66667%;}
+            .col-s-12 {width: 100%;}
+
+            .header  {
+                display: none;
+            }
+            .menu  {
+                display: none;
+            }
+            .left  {
+                display: none;
+            }
+            .vanban  {
+                display: none;
+            }
+            .hinh {
+                display: none;
+            }
+
+        }
+        @media only screen and (min-width:741px)and (max-width:1240px) {
+            .col-md-1 {width: 8.33333%;}
+            .col-md-2 {width: 16.66667%;}
+            .col-md-3 {width: 25%;}
+            .col-md-4 {width: 33.33333%;}
+            .col-md-5 {width: 41.66667%;}
+            .col-md-6 {width: 50%;}
+            .col-md-7 {width: 58.33333%;}
+            .col-md-8 {width: 66.66667%;}
+            .col-md-9 {width: 75%;}
+            .col-md-10 {width: 83.33333%;}
+            .col-md-11 {width: 91.66667%;}
+            .col-md-12 {width: 100%;}
+        }
+        @media only screen and (min-width:1241px){
+            .col-l-1 {width: 8.33333%;}
+            .col-l-2 {width: 16.66667%;}
+            .col-l-3 {width: 25%;}
+            .col-l-4 {width: 33.33333%;}
+            .col-l-5 {width: 41.66667%;}
+            .col-l-6 {width: 50%;}
+            .col-l-7 {width: 58.33333%;}
+            .col-l-8 {width: 66.66667%;}
+            .col-l-9 {width: 75%;}
+            .col-l-10 {width: 83.33333%;}
+            .col-l-11 {width: 91.66667%;}
+            .col-l-12 {width: 100%;}
+        }
+
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 80px;
+            width: 100%;
+            background-color: #7abaff;
+            margin-bottom: 5px;
+        }
+        .menu{
+            height: 50px;
+            width: 100%;
+            background-color: aquamarine;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+        .fonemenu{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .phanthan{
+            width: 100%;
+            height: 650px;
+            margin-top: 5px;
+        }
+        .left{
+            background-color: #7abaff;
+            height: 100%;
+            float: left;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .right{
+            background-color: #52cbcb;
+            height: 100%;
+            float: left;
+        }
+        .hinh{
+            width: 100%;
+            height: 160px;
+            margin-bottom: 10px;
+
+        }
+        .gioithieu{
+            display: flex;
+        }
+        .phanphai{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+        }
+        .vanban{
+            margin: 5px 15px;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class=" header row  ">
+        <img style="width: 14%;height: 100%" src="img/h1.jpg" alt="">
+    </div>
+
+    <div class="menu">
+        <p class="fonemenu"> Phim hoạt hình </p>
+        <p class="fonemenu">Phim hoạt hình yêu thích </p>
+        <p class="fonemenu">Nhân vật hoạt hình </p>
+        <p class="fonemenu">Góp ý</p>
+    </div>
+
+    <div class="phanthan   ">
+        <div class="left col-md-4 col-l-4 ">
+
+            <div style="display: flex;flex-direction: column;margin: 5px auto; width: 90%">
+                <img class="hinh" src="img/hinh2.jpg" alt="">
+                <a class="gioithieu" style="margin: 0 auto  " href="https://kids.pops.vn/series/doraemon-5d884435440bd501957eefc6"> Phim hoạt hình Doremon</a>
+            </div>
+            <div style="display: flex;flex-direction: column;margin: 10px auto ; width: 90%">
+                <img class="hinh" src="img/hinh2.jpg" alt="">
+
+                <a class="gioithieu" style="margin: 0 auto " href="https://kids.pops.vn/series/doraemon-5d884435440bd501957eefc6">
+                    Phim hoạt hình Doremon
+                </a>
+            </div>
+            <div style="display: flex;flex-direction: column;margin: 10px auto; width: 90% ">
+                <img class="hinh" src="img/hinhna.jpg" alt="">
+                <a class="gioithieu" style="margin: 0 auto " href="https://pops.vn/series/naruto-shippuden-6048850a5727e40034c04613"> Phim hoạt hình Naruto</a>
+            </div>
+
+        </div>
+
+        <div class="right col-md-8 col-l-8   ">
+            <div class="row col-s-12">
+            <iframe class="phanphai" width="560" height="315" src="https://www.youtube.com/embed/snvqwUZO3XY"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+            </iframe>
+
+                <p style="font-size: 20px;font-weight: 400;display: flex;justify-content: center;margin-top: 5px">
+                    Phim siêu nhân
+                </p>
+            </div>
+            <p class="vanban">
+                Tom và Jerry (tiếng Anh: Tom and Jerry) là một series phim hoạt hình của Mỹ được chiếu trên truyền
+                hình và rạp hát với nhiều thể loại từ phim ngắn cho tới phim dài. Được sản xuất bởi William Hanna
+                và Joseph Barbera cho hãng phim MGM, phim là cuộc đối đầu vô tận giữa chú mèo Tom và chú chuột Jerry
+                mang tới vô vàn tiếng cười cho khán giả. Hanna và Barbera viết kịch bản đồng thời làm đạo diễn cho
+                114 tập phim Tom & Jerry tại xưởng phim MGM trong thời gian từ những năm 1940 cho tới năm 1958
+                (năm xưởng phim hoạt hình của hãng đóng cửa). Phiên bản gốc của Tom & Jerry đoạt giải Oscar cho
+                thể loại phim hoạt hình ngắn 7 lần. Tom & Jerry có lượng khán giả đông đảo trên toàn thế giới
+                với đủ mọi thành phần từ trẻ em cho tới thanh niên, người lớn và được công nhận là một trong
+                những huyền thoại điện ảnh sống mãi trong lòng công chúng và lịch sử điện ảnh Mỹ. Năm 2000,
+                tạp chí TIME công bố Tom & Jerry là một trong những show truyền hình hay nhất mọi thời đại.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

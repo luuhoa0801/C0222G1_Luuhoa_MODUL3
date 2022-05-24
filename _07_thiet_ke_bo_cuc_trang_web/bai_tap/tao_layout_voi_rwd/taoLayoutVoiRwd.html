@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media only screen and (max-width:376px ){
+            .col-xs-1 {width: 8.33333%;}
+            .col-xs-2 {width: 16.66667%;}
+            .col-xs-3 {width: 25%;}
+            .col-xs-4 {width: 33.33333%;}
+            .col-xs-5 {width: 41.66667%;}
+            .col-xs-6 {width: 50%;}
+            .col-xs-7 {width: 58.33333%;}
+            .col-xs-8 {width: 66.66667%;}
+            .col-xs-9 {width: 75%;}
+            .col-xs-10 {width: 83.33333%;}
+            .col-xs-11 {width: 91.66667%;}
+            .col-xs-12 {width: 100%;}
+        }
+        @media only screen and (min-width:377px )and (max-width:740px ){
+            .col-s-1 {width: 8.33333%;}
+            .col-s-2 {width: 16.66667%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33333%;}
+            .col-s-5 {width: 41.66667%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33333%;}
+            .col-s-8 {width: 66.66667%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33333%;}
+            .col-s-11 {width: 91.66667%;}
+            .col-s-12 {width: 100%;}
+
+        }
+        @media only screen and (min-width:741px)and (max-width:1240px) {
+            .col-md-1 {width: 8.33333%;}
+            .col-md-2 {width: 16.66667%;}
+            .col-md-3 {width: 25%;}
+            .col-md-4 {width: 33.33333%;}
+            .col-md-5 {width: 41.66667%;}
+            .col-md-6 {width: 50%;}
+            .col-md-7 {width: 58.33333%;}
+            .col-md-8 {width: 66.66667%;}
+            .col-md-9 {width: 75%;}
+            .col-md-10 {width: 83.33333%;}
+            .col-md-11 {width: 91.66667%;}
+            .col-md-12 {width: 100%;}
+        }
+        @media only screen and (min-width:1241px){
+            .col-l-1 {width: 8.33333%;}
+            .col-l-2 {width: 16.66667%;}
+            .col-l-3 {width: 25%;}
+            .col-l-4 {width: 33.33333%;}
+            .col-l-5 {width: 41.66667%;}
+            .col-l-6 {width: 50%;}
+            .col-l-7 {width: 58.33333%;}
+            .col-l-8 {width: 66.66667%;}
+            .col-l-9 {width: 75%;}
+            .col-l-10 {width: 83.33333%;}
+            .col-l-11 {width: 91.66667%;}
+            .col-l-12 {width: 100%;}
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        body{
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            background-color: darkorange;
+            height: 80px;
+        }
+        .col-md-1 {width: 8.33333%;}
+        .col-md-2 {width: 16.66667%;}
+        .col-md-3 {width: 25%;}
+        .col-md-4 {width: 33.33333%;}
+        .col-md-5 {width: 41.66667%;}
+        .col-md-6 {width: 50%;}
+        .col-md-7 {width: 58.33333%;}
+        .col-md-8 {width: 66.66667%;}
+        .col-md-9 {width: 75%;}
+        .col-md-10 {width: 83.33333%;}
+        .col-md-11 {width: 91.66667%;}
+        .col-md-12 {width: 100%;}
+
+
+        .left{
+            background: greenyellow;
+            height: 450px;
+        }
+        .right{
+            background: aquamarine;
+            height: 450px;
+        }
+        .contain{
+            background: #7abaff;
+        }
+        .footer{
+            background-color: brown;
+            height: 80px;
+        }
+        .phan1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+        .mau{
+            width: 5%;
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .link{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+        }
+        .pphan1{
+            display: flex;
+            justify-content: center;
+            margin: 7px 0;
+        }
+        .ads{
+            height: 60px;
+            width: 60%;
+            margin:2px auto ;
+            display: flex;
+            justify-content: center;
+            border: 1px red solid;
+            line-height: 56px;
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class=" header row ">
+        <div class="phan1">
+            <p class="mau">Logo</p>
+            <p class="mau">Home</p>
+            <p class="mau">About</p>
+            <p class="mau">Projects</p>
+            <p class="mau">Contact</p>
+        </div>
+    </div>
+
+    <div class="row ">
+
+        <div class="col-l-2 col-md-2 left  link ">
+            <p class="pphan1">Link</p>
+            <p class="pphan1">Link</p>
+            <p class="pphan1">Link</p>
+
+        </div>
+
+        <div class="col-l-8 col-md-8 contain ">
+            <p style="font-size: 20px;font-weight: 600;margin: 5px 20px"> Việt Nam </p>
+            <p style="margin: 0 5px"> Lãnh thổ Việt Nam xuất hiện con người sinh sống từ thời đại đồ đá cũ. Lịch sử Việt Nam cổ đại bắt đầu
+                với các nhà nước Văn Lang, Âu Lạc. Âu Lạc bị nhà Triệu từ phương Bắc thôn tính vào đầu thế kỷ thứ 2
+                TCN; sau đó là thời kỳ Bắc thuộc kéo dài hơn một thiên niên kỷ. Chế độ quân chủ độc lập được tái lập
+                sau chiến thắng của Ngô Quyền trước nhà Nam Hán. Sự kiện này mở đường cho các triều đại độc lập kế tiếp
+                và trong suốt giai đoạn lịch sử trung đại, quốc gia này tiếp tục giành chiến thắng trước các cuộc chiến
+                tranh xâm lược từ phương Bắc và dần mở rộng về phía nam. Thời kỳ Bắc thuộc cuối cùng kết thúc sau chiến
+                thắng trước nhà Minh của nghĩa quân Lam Sơn.</p>
+            <hr style="margin: 10px 30px">
+            <p style=" font-size: 25px; font-weight: 500; margin: 5px 15px"> Test</p>
+            <p style="margin: 0 10px"> Lorem ipsum...</p>
+        </div>
+
+        <div class="col-l-2 col-md-2 right  ">
+                <div class="ads"> ADS</div>
+                <div class="ads"> ADS</div>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <p style="display: flex;margin: auto; font-size: 25px;font-weight: 500"> Foorter Text</p>
+    </div>
+
+
+</body>
+</html>
