@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        /*.clearfix:after {*/
+        /*    content: "";*/
+        /*    display: table;*/
+        /*    clear: both;*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div class="">
+    <p style="font-size: 2rem;font-weight: bold ">Responsive Image Gallery</p>
+    <p style="font-size: 1rem;font-weight: 700"> Resize the browser window to see the effect.</p>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="img/img_5terre.jpg" alt="Beautiful Flower 1" width="600" height="400">
+        <div class="desc">Mô tả về ảnh</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+            <img src="img/h2.jpg" alt="Beautiful Flower 2" width="600" height="400">
+
+        <div class="desc">Mô tả về ảnh</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+            <img src="img/h3.jpg" alt="Beautiful Flower 3" width="600" height="400">
+        <div class="desc">Mô tả về ảnh</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+            <img src="img/h4.jpg" alt="Beautiful Flower 4" width="600" height="400">
+        <div class="desc">Mô tả về ảnh</div>
+    </div>
+</div>
+<div style="font-size: 1rem; margin-top: 2rem">
+    This example use media queries to re-arrange the images on different screen sizes:
+    for screens larger than 700px wide, it will show four images side by side, for screens
+    smaller than 700px, it will show two images side by side. For screens smaller than 500px,
+    the images will stack vertically (100%).
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="../../../js/bootstrap.js"></script>
+</html>
