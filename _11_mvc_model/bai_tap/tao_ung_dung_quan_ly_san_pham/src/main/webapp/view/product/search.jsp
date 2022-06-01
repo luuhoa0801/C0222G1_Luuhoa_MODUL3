@@ -16,13 +16,7 @@
 
 <table>
     <c:forEach items="${productList}" var="product">
-<%--        <tr>--%>
-<%--            <td>${product.getId()} </td>--%>
-<%--            <td>${product.getName()} </td>--%>
-<%--            <td>${product.getPrice()} </td>--%>
-<%--            <td>${product.getDescribe()} </td>--%>
-<%--            <td>${product.getProducer()} </td>--%>
-<%--        </tr>--%>
+
         <tr>
             <td>Id: </td>
             <td>${product.getId()}</td>
