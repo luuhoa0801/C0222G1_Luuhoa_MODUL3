@@ -12,7 +12,8 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/user?action=add">Them moi</a>
+<a href="/user?action=add">Thêm mới user</a>
+<a href="/user" style="margin-left: 50px">Trang chủ</a>
 <p>${mess}</p>
 <form action="/user?action=search" method="post">
     <input type="text" name="country">
